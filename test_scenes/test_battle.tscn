@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://e0mndbxqreve"]
+
+[ext_resource type="PackedScene" uid="uid://k2h6jjetrp8j" path="res://Player/player.tscn" id="1_c2b1e"]
+[ext_resource type="PackedScene" uid="uid://cbtyii6fqdu1w" path="res://enemies/pawn.tscn" id="2_rd4bk"]
+[ext_resource type="PackedScene" uid="uid://bnu3tbkp3ada8" path="res://enemies/sheep.tscn" id="3_wvhlx"]
+[ext_resource type="PackedScene" uid="uid://jf28ki3ynk3d" path="res://enemies/goblin.tscn" id="4_bcrse"]
+[ext_resource type="PackedScene" uid="uid://b86trt35hk47d" path="res://misc/ritual.tscn" id="5_gkyuw"]
+
+[node name="TestBattle" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_c2b1e")]
+position = Vector2(389.026, 315.786)
+scale = Vector2(1.02609, 1.04139)
+
+[node name="Pawn" parent="." instance=ExtResource("2_rd4bk")]
+position = Vector2(751, 290)
+
+[node name="Pawn2" parent="." instance=ExtResource("2_rd4bk")]
+position = Vector2(796, 482)
+
+[node name="Sheep" parent="." instance=ExtResource("3_wvhlx")]
+position = Vector2(868, 354)
+
+[node name="Sheep2" parent="." instance=ExtResource("3_wvhlx")]
+position = Vector2(1209, 188)
+
+[node name="Goblin" parent="." instance=ExtResource("4_bcrse")]
+position = Vector2(1211, 371)
+
+[node name="Sheep3" parent="." instance=ExtResource("3_wvhlx")]
+position = Vector2(675, 403)
+
+[node name="Sheep4" parent="." instance=ExtResource("3_wvhlx")]
+position = Vector2(647, 515)
+
+[node name="Sheep5" parent="." instance=ExtResource("3_wvhlx")]
+position = Vector2(745, 346)
+
+[node name="Sheep6" parent="." instance=ExtResource("3_wvhlx")]
+position = Vector2(743, 459)
+
+[node name="Pawn3" parent="." instance=ExtResource("2_rd4bk")]
+position = Vector2(549, 558)
+
+[node name="Pawn4" parent="." instance=ExtResource("2_rd4bk")]
+position = Vector2(568, 432)
+
+[node name="Pawn5" parent="." instance=ExtResource("2_rd4bk")]
+position = Vector2(447, 519)
+
+[node name="Pawn6" parent="." instance=ExtResource("2_rd4bk")]
+position = Vector2(294, 517)
+
+[node name="Ritual" parent="." instance=ExtResource("5_gkyuw")]
